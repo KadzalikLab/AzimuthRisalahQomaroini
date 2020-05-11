@@ -140,6 +140,8 @@ public class PerhitunganAsli {
 
 
     public  static int []desimal_ke_derajat(double desimal){
+        boolean negatif=false;
+        if (desimal<0)negatif=true;
         int jah=(int)desimal;
         double qoh=(Math.abs(desimal)%1)*60;
         double ni=Math.round((qoh%1)*60);
